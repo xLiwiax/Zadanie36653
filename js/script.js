@@ -25,7 +25,7 @@ const validate = (event) => {
         errors.appendChild(liError);
     }
 
-    if(txtEmail.value.includes('@')) {
+    if(!txtEmail.value.includes('@')) {
         let liError = document.createElement('li');
         liError.innerText = "Adres e-mail musi zawierać @ ";
         errors.appendChild(liError);
